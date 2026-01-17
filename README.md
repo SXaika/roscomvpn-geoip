@@ -15,9 +15,9 @@
 - 0.0.0.0/8 из private - убираем утечку DNS на некоторых устройствах
 
 ## 📥 **Статические ссылки на latest версию**  
-https://github.com/hydraponique/roscomvpn-geoip/releases/latest/download/geoip.dat
+https://github.com/SXaika/roscomvpn-geoip/releases/latest/download/geoip.dat
 
-https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geoip@release/geoip.dat
+https://cdn.jsdelivr.net/gh/SXaika/roscomvpn-geoip@release/geoip.dat
 
 ## 📅 Обновления
 Файл **обновляется каждый четверг** и **при внесении любого изменения в данный репозиторий**
