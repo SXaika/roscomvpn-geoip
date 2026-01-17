@@ -4,7 +4,7 @@
       "type": "text",
       "action": "add",
       "args": {
-        "name": "direct",
+        "name": "ru",
         "uri": "./output/text/final.txt"
       }
     },
@@ -12,7 +12,7 @@
       "type": "text",
       "action": "add",
       "args": {
-        "name": "direct",
+        "name": "ru",
         "uri": "./output/text/private.txt"
       }
     }
