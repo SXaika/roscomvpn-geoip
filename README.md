@@ -32,7 +32,7 @@ https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geoip@release/geoip.dat
       {
         "type": "field",
         "ip": [
-          "geoip:direct"
+          "geoip:ru"
         ],
         "outboundTag": "direct"
       }
