@@ -13,7 +13,7 @@
       "type": "text",
       "action": "add",
       "args": {
-        "name": "private",
+        "name": "ru",
         "uri": "./tmp/text/private.txt"
       }
     }
