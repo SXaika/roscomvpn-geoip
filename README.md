@@ -2,7 +2,7 @@
 
 ### Генерирует самый актуальный `geoip.dat`, состоящий из всего одного директ списка - актуальнейшей базой всех НУЖНЫХ CIDR РФ/РБ + "хирургическая" фильтрация того, что не должно или должно туда попадать
 
-#### Из чего состоит `geoip:direct`:
+#### Из чего состоит `geoip:ru`:
 - MaxMind GeoIP (всегда свежий список всех существующих RU/BY CIDR-диапазонов/подсетей)
 - Все известные CIDR из резолвинга и геобаз (включая зарубежные активы) от **VK Company/Mail.Ru**, **Yandex** и **CDNVideo** (от Билайн)
 - Apple пуши и уведомления (тем самым - боремся с проблемой доставки пушей на iOS устройствах)
@@ -15,15 +15,15 @@
 - 0.0.0.0/8 из private - убираем утечку DNS на некоторых устройствах
 
 ## 📥 **Статические ссылки на latest версию**  
-https://github.com/hydraponique/roscomvpn-geoip/releases/latest/download/geoip.dat
+https://github.com/SXaika/roscomvpn-geoip/releases/latest/download/geoip.dat
 
-https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geoip@release/geoip.dat
+https://cdn.jsdelivr.net/gh/SXaika/roscomvpn-geoip@release/geoip.dat
 
 ## 📅 Обновления
 Файл **обновляется каждый четверг** и **при внесении любого изменения в данный репозиторий**
 
 ## 🛠 Использование с Xray/V2Ray
-Добавьте правило `geoip:direct` в конфигурацию Xray/V2Ray, чтобы **направлять НУЖНЫЙ трафик напрямую**:
+Добавьте правило `geoip:ru` в конфигурацию Xray/V2Ray, чтобы **направлять НУЖНЫЙ трафик напрямую**:
 
 ```json
 {
@@ -32,7 +32,8 @@ https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geoip@release/geoip.dat
       {
         "type": "field",
         "ip": [
-          "geoip:direct"
+          "geoip:ru",
+          "geoip:private"
         ],
         "outboundTag": "direct"
       }
