@@ -32,8 +32,7 @@ https://cdn.jsdelivr.net/gh/SXaika/roscomvpn-geoip@release/geoip.dat
       {
         "type": "field",
         "ip": [
-          "geoip:ru",
-          "geoip:private"
+          "geoip:ru"
         ],
         "outboundTag": "direct"
       }
