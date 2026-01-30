@@ -4,7 +4,7 @@
       "type": "text",
       "action": "add",
       "args": {
-        "name": "direct",
+        "name": "ru",
         "uri": "./tmp/text/final.txt",
         "onlyIPType": "ipv4"
       }
@@ -17,7 +17,7 @@
 	  "type": "text",
 	  "action": "remove",
 	  "args": {
-	    "name": "private",
+	    "name": "ru",
 	    "ipOrCIDR": ["0.0.0.0/8"]
       }
 	}
