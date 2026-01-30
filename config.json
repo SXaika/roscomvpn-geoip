@@ -11,16 +11,13 @@
     },
     {
       "type": "private",
-      "action": "add",
-      "args": {
-        "name": "ru"
-      }
+      "action": "add"
     },
 	{
 	  "type": "text",
 	  "action": "remove",
 	  "args": {
-	    "name": "ru",
+	    "name": "private",
 	    "ipOrCIDR": ["0.0.0.0/8"]
       }
 	}
