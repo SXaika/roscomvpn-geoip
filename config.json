@@ -11,7 +11,10 @@
     },
     {
       "type": "private",
-      "action": "add"
+      "action": "add",
+      "args": {
+        "name": "ru"
+      }
     },
 	{
 	  "type": "text",
