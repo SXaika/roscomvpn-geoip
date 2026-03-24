@@ -251,7 +251,7 @@
       "type": "text",
       "action": "add",
       "args": {
-        "name": "wiwide",
+        "name": "whitelist",
         "uri": "./whitelist.txt",
         "onlyIPType": "ipv4"
       }
@@ -260,7 +260,7 @@
       "type": "text",
       "action": "add",
       "args": {
-        "name": "wiwide",
+        "name": "whitelist",
         "uri": "./CUSTOM-whitelist.txt"
       }
     },
