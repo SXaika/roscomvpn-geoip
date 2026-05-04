@@ -61,7 +61,7 @@
         "ipv4": "./geolite2/GeoLite2-ASN-Blocks-IPv4.csv",
         "ipv6": "./geolite2/GeoLite2-ASN-Blocks-IPv6.csv",
         "wantedList": {
-          "direct": [
+          "ru": [
             "AS47764",
             "AS199295",
             "AS207970",
@@ -92,7 +92,7 @@
         "ipv4": "./geolite2/GeoLite2-ASN-Blocks-IPv4.csv",
         "ipv6": "./geolite2/GeoLite2-ASN-Blocks-IPv6.csv",
         "wantedList": {
-          "direct": [
+          "ru": [
             "AS13238",
             "AS44534",
             "AS207304",
@@ -126,7 +126,7 @@
         "ipv4": "./geolite2/GeoLite2-ASN-Blocks-IPv4.csv",
         "ipv6": "./geolite2/GeoLite2-ASN-Blocks-IPv6.csv",
         "wantedList": {
-          "direct": [
+          "ru": [
             "AS57363",
             "AS204720"
           ]
@@ -140,7 +140,7 @@
         "ipv4": "./geolite2/GeoLite2-ASN-Blocks-IPv4.csv",
         "ipv6": "./geolite2/GeoLite2-ASN-Blocks-IPv6.csv",
         "wantedList": {
-          "direct": [
+          "ru": [
             "AS206980"
           ]
         }
@@ -224,7 +224,7 @@
         "ipv4": "./geolite2/GeoLite2-ASN-Blocks-IPv4.csv",
         "ipv6": "./geolite2/GeoLite2-ASN-Blocks-IPv6.csv",
         "wantedList": {
-          "direct": [
+          "ru": [
             "AS24940",
             "AS212317",
             "AS213230",
@@ -240,7 +240,7 @@
         "ipv4": "./geolite2/GeoLite2-ASN-Blocks-IPv4.csv",
         "ipv6": "./geolite2/GeoLite2-ASN-Blocks-IPv6.csv",
         "wantedList": {
-          "direct": [
+          "ru": [
             "AS48158",
             "AS47328"
           ]
