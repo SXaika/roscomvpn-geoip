@@ -162,6 +162,40 @@ jobs:
             /tmp/sing-box.tar.gz
             /tmp/text.tar.gz
 
+      - name: MASTER Remove outdated GitHub releases
+        if: github.ref_name == 'master'
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const { DAILY_TAG } = process.env
+            const { data: currentRelease } = await github.rest.repos.getReleaseByTag({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag: DAILY_TAG,
+            })
+            const releases = await github.paginate(github.rest.repos.listReleases, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              per_page: 100,
+            })
+
+            for (const release of releases) {
+              if (release.id === currentRelease.id) continue
+
+              core.info(`Deleting outdated release ${release.tag_name}`)
+              await github.rest.repos.deleteRelease({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: release.id,
+              })
+              await github.rest.git.deleteRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: `tags/${release.tag_name}`,
+              })
+            }
+
+
       - name: MASTER Purge CDN for release and updated master branches
         if: github.ref_name == 'master'
         run: |
